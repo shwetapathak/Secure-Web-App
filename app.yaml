@@ -22,19 +22,6 @@ handlers:
 - url: /main.php
   script: main.php
 
-- url: /upload.php
-  script: upload.php
-
 
 - url: /login.php
   script: login.php
-  
-- url: /delete.php
-  script: delete.php
-
-   
-- url: /comment.php
-  script: comment.php
-  
-- url: /upload_handler.php
-  script: upload_handler.php
