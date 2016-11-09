@@ -4,13 +4,12 @@ runtime: php55
 api_version: 1
 threadsafe: yes
 
-
-automatic_scaling:
-  min_idle_instances: 5
-  max_idle_instances: 7
-  min_pending_latency: 10ms
-  max_pending_latency: 25ms
-
+env_variables:
+  # Replace project, instance, database, user and password with the values obtained
+  # when configuring your Cloud SQL instance.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/secureassign2:us-central1:myinstance;dbname=users
+  MYSQL_USER: root
+  MYSQL_PASSWORD: 'shweta2191'
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
