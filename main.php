@@ -6,7 +6,9 @@
     Password:   <input type="password" name = "password" value="password">
     
     <input type="submit" value="Send">
-	</form><?php
+	</form>
+
+	<?php
 
 
 //echo "User Authentication";
@@ -39,7 +41,7 @@ if($row>0)
 }
 
 }
-?>>
+?>
 
 </body>
 </html>
