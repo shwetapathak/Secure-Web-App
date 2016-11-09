@@ -11,16 +11,10 @@ env_variables:
   MYSQL_USER: root
   MYSQL_PASSWORD: 'shweta2191'
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
-
+- url: /.*
+  script: main.php
 - url: /
   script: main.php
-  
-- url: /main.php
-  script: main.php
-
-
+ 
 - url: /login.php
   script: login.php
