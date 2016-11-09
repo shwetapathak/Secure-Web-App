@@ -1,0 +1,18 @@
+application: secureproject1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /
+  script: main.php
+  
+- url: /main.php
+  script: main.php
+
+
+- url: /login.php
+  script: login.php
